@@ -35,14 +35,14 @@ af[#af+1] = Def.Sprite{
 			self:y(-130):shadowlength(0)
 		else
 			local style = ThemePrefs.Get("VisualStyle")
-			local image = THEME:GetPathG("", "_VisualStyles/"..style.."/TitleMenu (doubleres).png")
+			local image = THEME:GetPathG("", "_logos/gp.png")
 			local imageAlt = "/Themes/"..THEME:GetCurThemeName().."/Graphics/_VisualStyles/"..style.."/TitleMenuAlt (doubleres).png"
 			if FILEMAN:DoesFileExist(imageAlt) and math.random(1,100) <= 10 then
 				self:Load(imageAlt)
 			else
 				self:Load(image)
 			end
-			self:zoom(0.7):vertalign(top)
+			self:zoom(0.05):vertalign(top)
 			self:y(-102):shadowlength(0.75)
 		end
 	end,
